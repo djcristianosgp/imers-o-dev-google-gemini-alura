@@ -3,6 +3,7 @@ function pesquisar() {
     let section = document.getElementById("resultados-pesquisa");
     let labelqtderesultados = document.getElementById("qtde-resultados");
     let termoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
+    
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
@@ -28,6 +29,8 @@ function pesquisar() {
             <h4>Gênero: ${dado.genero}</h4>
             <h4>Bilheteria: ${dado.bilheteria.toLocaleString('pt-BR', { style: 'currency', currency: 'USD' })}</h4>
             <br>                   
+            <a href=${dado.linkTrailer} target="_blank"> Assista o Trailer</a>
+            <br>  
             <a href=${dado.linkWikipedia} target="_blank">Mais informações</a>
             </div>
             </div>
@@ -35,8 +38,21 @@ function pesquisar() {
             qtderesultados++;
         }
     };
-
+    
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
-    labelqtderesultados.innerHTML = `${qtderesultados} Encontrados`;
+    labelqtderesultados.innerHTML = `${qtderesultados} Resultados encontrados`;
+
+    // Seleciona todos os elementos com a classe item-resultado
+  const itensResultado = document.querySelectorAll('.item-resultado');
+
+  // Função para ativar a animação de um elemento
+  function ativarItem(item, index) {
+    setTimeout(() => {
+      item.classList.add('active');
+    }, index * 200); // Aumenta o delay em 1 segundo para cada item
+  }
+
+  // Aplica a função ativarItem a cada elemento com um delay
+  itensResultado.forEach(ativarItem);
 }
