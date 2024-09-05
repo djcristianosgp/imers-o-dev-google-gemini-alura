@@ -1,11 +1,20 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+    --cor-principal: #B2D9C6;
+    --cor-texto-principal: #222831;
+    --cor-texto-secundario: #45474B;
+    --cor-botao: #30475E;
+    --cor-fundo-claro: #F5F7F8;
+    --cor-acento: #FF6B6B; 
+  }
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif;
     /* Define a fonte padrão */
-    background-color: #DDDDDD;
+    background-color: var(--cor-principal);
     /* Cor de fundo da página */
     display: flex;
     /* Usa Flexbox para layout */
@@ -25,7 +34,7 @@ body {
 h1 {
     font-size: 2.5rem;
     /* Tamanho da fonte */
-    color: #222831;
+    color: var(--cor-texto-principal);
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
@@ -57,7 +66,7 @@ section input {
     /* Borda arredondada */
     margin-bottom: 1rem;
     /* Espaçamento abaixo dos inputs */
-    color: #45474B;
+    color: var(--cor-texto-secundario);
     /* Cor do texto */
     font-size: 1rem;
     /* Tamanho da fonte */
@@ -73,9 +82,9 @@ section button {
     /* Remove a borda padrão */
     border-radius: 1.5rem;
     /* Borda arredondada */
-    background-color: #30475E;
+    background-color: var(--cor-botao);
     /* Cor de fundo do botão */
-    color: #F5F7F8;
+    color: var(--cor-fundo-claro);
     /* Cor do texto do botão */
     font-size: 1rem;
     /* Tamanho da fonte */
@@ -108,7 +117,7 @@ section a {
     background: #FFFFFF;    
     /* Cor de fundo dos itens */
     border-radius: 0.6rem;
-    border: #222831;
+    border: var(--cor-texto-principal);
     /* Borda arredondada */
     padding: 1rem;
     /* Espaçamento interno */
@@ -138,7 +147,7 @@ section a {
 .item-resultado h2 {
     font-size: 1.5rem;
     /* Tamanho da fonte */
-    color: #222831;
+    color: var(--cor-texto-principal);
     /* Cor do texto */
 }
 
@@ -146,7 +155,7 @@ section a {
 .item-resultado a {
     text-decoration: none;
     /* Remove o sublinhado padrão dos links */
-    color: #30475E;
+    color: var(--cor-botao);
     /* Cor do texto dos links */
 }
 
@@ -154,7 +163,7 @@ section a {
     content: "\f03e";
     margin-right: 5px;
     font-family: "Font Awesome 6 Free";
-    color: #222831; /* Azul claro */
+    color: var(--cor-texto-principal); /* Azul claro */
     font-size: 1.2em;
 }
 
@@ -182,7 +191,7 @@ section a {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B;
+    color: var(--cor-texto-secundario);
     /* Cor do texto */
     margin: 0.5rem 0;
     /* Margem acima e abaixo */
@@ -190,9 +199,10 @@ section a {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8;
+    background-color: var(--cor-fundo-claro);
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
     /* Cor de fundo do rodapé */
-    color: #45474B;
+    color: var(--cor-texto-secundario);
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
