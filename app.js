@@ -29,9 +29,9 @@ function pesquisar() {
             <h4>Gênero: ${dado.genero}</h4>
             <h4>Bilheteria: ${dado.bilheteria.toLocaleString('pt-BR', { style: 'currency', currency: 'USD' })}</h4>
             <br>                   
-            <a href=${dado.linkTrailer} target="_blank"> Assista o Trailer</a>
+            <a href=${dado.linkTrailer} target="_blank">Assista ao Trailer</a>
             <br>  
-            <a href=${dado.linkWikipedia} target="_blank">Mais informações</a>
+            <a href=${dado.linkWikipedia}   ="_blank">Mais informações</a>
             </div>
             </div>
             `;

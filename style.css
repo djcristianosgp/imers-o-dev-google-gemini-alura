@@ -112,7 +112,11 @@ section a {
     /* Borda arredondada */
 }
 
-/* Estiliza cada item de resultado */
+#pesquisa {
+    text-align: center;
+  }
+
+  /* Estiliza cada item de resultado */
 .item-resultado {
     background: #FFFFFF;    
     /* Cor de fundo dos itens */
@@ -141,6 +145,7 @@ section a {
 
 .item-resultado img {
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -160,10 +165,18 @@ section a {
 }
 
 .item-resultado a[href*="youtube"]::before  {
-    content: "\f03e";
+    content: "\f06e";
     margin-right: 5px;
     font-family: "Font Awesome 6 Free";
-    color: var(--cor-texto-principal); /* Azul claro */
+    color: var(--cor-texto-principal); 
+    font-size: 1.2em;
+}
+
+.item-resultado a[href*="wikipedia"]::before  {
+    content: "\f075";
+    margin-right: 5px;
+    font-family: "Font Awesome 6 Free";
+    color: var(--cor-texto-principal); 
     font-size: 1.2em;
 }
 
