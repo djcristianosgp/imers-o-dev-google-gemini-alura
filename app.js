@@ -7,7 +7,7 @@ function pesquisar() {
   // se campoPesquisa for uma string sem nada
   if (!campoPesquisa) {
     labelqtderesultados.innerHTML = ``;
-    section.innerHTML = "<p>Você precisa digitar o nome de um atleta ou esporte</p>"
+    section.innerHTML = "<p>Você precisa digitar algo para realizar a pesquisa</p>";
     return
   }
 
