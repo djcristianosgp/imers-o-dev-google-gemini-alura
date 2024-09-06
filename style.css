@@ -7,8 +7,8 @@
     --cor-texto-secundario: #45474B;
     --cor-botao: #30475E;
     --cor-fundo-claro: #F5F7F8;
-    --cor-acento: #FF6B6B; 
-  }
+    --cor-acento: #FF6B6B;
+}
 
 /* Estiliza o corpo da página */
 body {
@@ -28,6 +28,15 @@ body {
     /* Preenche a altura total da viewport */
     margin: 0;
     padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Estiliza os títulos h1 */
@@ -114,11 +123,11 @@ section a {
 
 #campo-pesquisa {
     text-align: center;
-  }
+}
 
-  /* Estiliza cada item de resultado */
+/* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF;    
+    background: #FFFFFF;
     /* Cor de fundo dos itens */
     border-radius: 0.6rem;
     border: var(--cor-texto-principal);
@@ -139,9 +148,9 @@ section a {
 }
 
 .item-resultado.active {
-    opacity: 1;    
+    opacity: 1;
     transform: translateY(0);
-  }
+}
 
 .item-resultado img {
     border-radius: 15px;
@@ -164,19 +173,19 @@ section a {
     /* Cor do texto dos links */
 }
 
-.item-resultado a[href*="youtube"]::before  {
+.item-resultado a[href*="youtube"]::before {
     content: "\f06e";
     margin-right: 5px;
     font-family: "Font Awesome 6 Free";
-    color: var(--cor-texto-principal); 
+    color: var(--cor-texto-principal);
     font-size: 1.2em;
 }
 
-.item-resultado a[href*="wikipedia"]::before  {
+.item-resultado a[href*="wikipedia"]::before {
     content: "\f075";
     margin-right: 5px;
     font-family: "Font Awesome 6 Free";
-    color: var(--cor-texto-principal); 
+    color: var(--cor-texto-principal);
     font-size: 1.2em;
 }
 
