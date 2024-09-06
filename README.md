@@ -35,3 +35,5 @@ Se você é um desenvolvedor e quer ajudar a melhorar essa aplicação, fique à
 **Dúvidas?**
 
 Se tiver alguma dúvida, pode abrir uma issue aqui no GitHub ou me mandar um email.
+
+**Acesse a aplicação em:** https://imers-o-dev-google-gemini-alura.vercel.app/
